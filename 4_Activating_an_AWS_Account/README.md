@@ -58,3 +58,13 @@ Install: https://docs.docker.com/get-docker/
 # Terraform CLI (optional)
 
 Install: https://www.terraform.io/downloads.html
+
+
+# Ansible (optional)
+
+Install: https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html
+
+```
+pip install ansible
+```
+
