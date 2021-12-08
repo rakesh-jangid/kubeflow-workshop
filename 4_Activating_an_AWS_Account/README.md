@@ -50,6 +50,6 @@ brew install aws-iam-authenticator
 aws-iam-authenticator help
 ```
 
-# Terraform CLI
+# Terraform CLI (optional)
 
 Install: https://www.terraform.io/downloads.html
