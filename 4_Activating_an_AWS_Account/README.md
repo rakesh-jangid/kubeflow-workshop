@@ -50,6 +50,11 @@ brew install aws-iam-authenticator
 aws-iam-authenticator help
 ```
 
+# Docker
+
+Install: https://docs.docker.com/get-docker/
+
+
 # Terraform CLI (optional)
 
 Install: https://www.terraform.io/downloads.html
