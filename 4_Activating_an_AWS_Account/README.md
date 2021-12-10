@@ -54,6 +54,9 @@ aws-iam-authenticator help
 
 Install: https://docs.docker.com/get-docker/
 
+# kustomize  version <4
+
+Install: https://github.com/kubernetes-sigs/kustomize/blob/master/hack/install_kustomize.sh
 
 # Terraform CLI (optional)
 
