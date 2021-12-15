@@ -85,4 +85,4 @@ Now enable on you localhost SOCKS proxy(on mac go to wifi/advanced/proxies/SOCKS
 
 Now you can try to access to the Kubeflow dashboard using link provided during installation
 
-The dashboard is available at http://<IP>.nip.io
+The dashboard is available at http://Ec2_IP.nip.io
