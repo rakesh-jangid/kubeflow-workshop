@@ -458,7 +458,7 @@ One or more taints are applied to a node; this marks that the node should not ac
 Tolerations are applied to pods, and allow (but do not require) the pods to schedule onto nodes with matching taints.
 See Kubernetes Taints and Tolerations documentation for more details.
 To run a GPU workload on GPU-powered Spot instance nodes, with nvidia.com/gpu: "true:NoSchedule" taint, the workload must include both matching tolerations and nodeSelector configurations.
-Kubernetes deployment with 10 pod replicas with nvidia/gpu: 1 limit:
+Kubernetes deployment with nvidia/gpu: 1 limit:
 
 cuda_example.yaml
 ```
