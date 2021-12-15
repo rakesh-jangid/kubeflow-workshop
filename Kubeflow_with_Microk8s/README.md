@@ -1,5 +1,8 @@
 # Kubeflow on Microk8s
 
+Microk8s is built by the Kubernetes team at Canonical. 
+Build for the zero-ops user experience.  It comes with many usefull Addons and Charmed Operators.
+
 ## Minimum requirements:
 16GB RAM
 15GB Storage
