@@ -1,8 +1,8 @@
 # Kubeflow-workshop
 
 # Day 1 & 2
-Intruductions, Kubernete, EKS and Kubeflow concepts
-Working with EKS using eksctl
+Intruductions, Kubernetes, EKS and Kubeflow concepts
+Working with EKS using eksctl,
 Microk8s
 
 # Day 3
