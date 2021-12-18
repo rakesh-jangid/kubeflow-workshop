@@ -10,6 +10,19 @@ metadata:
   region: us-west-2
 
 nodeGroups:
+  - name: scale-west2a
+    instanceType: t3.small
+    desiredCapacity: 1
+    maxSize: 3
+    availabilityZones: ["us-west-2a"]
+    iam:
+      withAddonPolicies:
+        autoScaler: true
+    labels:
+      nodegroup-type: stateful-west1a
+      instance-type: onDemand
+    ssh:
+      enableSsm: true
   - name: scale-west2b
     instanceType: t3.small
     desiredCapacity: 1
@@ -19,31 +32,18 @@ nodeGroups:
       withAddonPolicies:
         autoScaler: true
     labels:
-      nodegroup-type: stateful-west1c
+      nodegroup-type: stateful-west2b
       instance-type: onDemand
     ssh:
       enableSsm: true
-  - name: scale-west2c
-    instanceType: t3.small
-    desiredCapacity: 1
-    maxSize: 3
-    availabilityZones: ["us-west-2c"]
-    iam:
-      withAddonPolicies:
-        autoScaler: true
-    labels:
-      nodegroup-type: stateful-west2c
-      instance-type: onDemand
-    ssh:
-      enableSsm: true
-  - name: scale-spot-2d
+  - name: scale-spot-2c
     desiredCapacity: 1
     maxSize: 3
     instancesDistribution:
       instanceTypes: ["t3.small", "t3a.small"]
       onDemandBaseCapacity: 0
       onDemandPercentageAboveBaseCapacity: 0
-    availabilityZones: ["us-west-2d"]
+    availabilityZones: ["us-west-2c"]
     iam:
       withAddonPolicies:
         autoScaler: true
