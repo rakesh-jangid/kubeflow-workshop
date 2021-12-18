@@ -11,7 +11,7 @@ metadata:
 
 nodeGroups:
   - name: scale-west2b
-    instanceType: t2.small
+    instanceType: t3.small
     desiredCapacity: 1
     maxSize: 3
     availabilityZones: ["us-west-2b"]
@@ -24,7 +24,7 @@ nodeGroups:
     ssh:
       enableSsm: true
   - name: scale-west2c
-    instanceType: t2.small
+    instanceType: t3.small
     desiredCapacity: 1
     maxSize: 3
     availabilityZones: ["us-west-2c"]
@@ -40,7 +40,7 @@ nodeGroups:
     desiredCapacity: 1
     maxSize: 3
     instancesDistribution:
-      instanceTypes: ["t2.small", "t3.small"]
+      instanceTypes: ["t3.small", "t3a.small"]
       onDemandBaseCapacity: 0
       onDemandPercentageAboveBaseCapacity: 0
     availabilityZones: ["us-west-2d"]
