@@ -1,4 +1,4 @@
-[base]: ../../docs/glossary.md#base
+[base]: https://kubectl.docs.kubernetes.io/references/kustomize/glossary/#base
 [config]: https://github.com/kubernetes-sigs/kustomize/tree/master/examples/helloWorld
 [gitops]: https://kubectl.docs.kubernetes.io/references/kustomize/glossary/#gitops
 [hello]: https://github.com/monopole/hello
