@@ -73,6 +73,7 @@ Expect something like:
 >     └── service.yaml
 > ```
 
+*** Fix: remove metadata section from kustomization.yaml
 
 One could immediately apply these resources to a
 cluster:
