@@ -10,6 +10,9 @@
 [variant]: https://kubectl.docs.kubernetes.io/references/kustomize/glossary/#variant
 [variants]: https://kubectl.docs.kubernetes.io/references/kustomize/glossary/#variant
 
+# Installation: 
+https://stackoverflow.com/questions/66836979/how-to-install-a-specific-kustomize-version
+
 # Demo: hello world with variants
 
 Steps:
