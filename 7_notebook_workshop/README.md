@@ -182,6 +182,28 @@ Test accuracy: 0.861299991607666
 
 The first few lines shows that TensorFlow and Keras dataset is downloaded. Training data set is 60k images and test data set is 10k images. Hyperparameters used for the training, outputs from five epochs, and finally the model accuracy is shown.
 
+# Sharing  notebooks
+When we talk of sharing their notebooks, there are generally two paradigms they may be considering. 
+Most often, individuals share the end-result of their work, which means sharing non-interactive, pre-rendered versions of their notebooks; however, it is also possible to collaborate on notebooks with the aid version control systems such as Git.
+
+Before your share
+
+A shared notebook will appear exactly in the state it was in when you export or save it, including the output of any code cells. 
+Therefore, to ensure that your notebook is share-ready, so to speak, there are a few steps you should take before sharing:
+
+* Click "Cell > All Output > Clear"
+* Click "Kernel > Restart & Run All"
+Wait for your code cells to finish executing and check they did so as expected
+This will ensure your notebooks don’t contain intermediary output, have a stale state, and executed in order at the time of sharing.
+
+* Click "Cell > All Output > Clear" (One more time to clearn up results)
+* Click "File > Download as > Notebook" and export your notebook
+
+# Workspace Volume
+By default, when you delete your notebook, workspace volume will not be deleted. 
+You can persist your model development work here. 
+Then, You and your teammate can reuse these existing volumes.
+
 # Troubleshooting
 Problems and solutions for common problems with Kubeflow Notebooks
 
