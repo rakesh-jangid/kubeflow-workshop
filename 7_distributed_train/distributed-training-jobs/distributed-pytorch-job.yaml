@@ -16,7 +16,7 @@ spec:
             - name: pytorch
               image: gcr.io/kubeflow-ci/pytorch-dist-mnist_test:1.0
               args: ["--backend", "gloo"]
-              # Comment out the below resources to use the CPU.
+              # Comment out the below resources to use the GPU.
               #resources:
                 #limits:
                   #nvidia.com/gpu: 1
@@ -32,7 +32,7 @@ spec:
             - name: pytorch
               image: gcr.io/kubeflow-ci/pytorch-dist-mnist_test:1.0
               args: ["--backend", "gloo"]
-              # Comment out the below resources to use the CPU.
+              # Comment out the below resources to use the GPU.
               #resources:
                 #limits:
                   #nvidia.com/gpu: 1
