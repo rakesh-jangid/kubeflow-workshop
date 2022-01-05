@@ -24,6 +24,7 @@ aws s3 mb s3://$S3_BUCKET --region $AWS_REGION
 This name will be used in the pod specification later. This bucket is also used for serving the model.
 
 If you want to use an existing bucket in a different region, then make sure to specify the exact region as the value of AWS_REGION environment variable in mnist-training.yaml.
+
 # AWS credentials for EKS
 ```buildoutcfg
 aws iam create-user --user-name s3user
@@ -48,6 +49,7 @@ data:
   AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY_VALUE
 EOF
 ```
+
 # POD
 model.yaml
 ```
