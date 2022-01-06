@@ -1192,7 +1192,10 @@ ansible/roles/eks/alb.yaml
 - name: get oidc name
     shell: "aws eks describe-cluster --name {{ cluster_name}} --query \"cluster.identity.oidc.issuer\" --output text"
   register: oidc
-
+  
+- set_fact:
+    irsa_oidc: "{{ oidc['stdout'].split('https://')[1]  }}"
+    
 - name: IRSA for ALB controller
   cloudformation:
     stack_name: "alb-controller-iam"
