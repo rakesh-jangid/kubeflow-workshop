@@ -1213,7 +1213,7 @@ ansible/roles/eks/alb.yaml
   vars:
     - eks_cluster_name: "{{ cluster_name }}"
     - account_id: "{{ aws_account }}"
-    - iam_role_name: "ALB_IRSA_ROLE"
+    - iam_role_name: "aws-load-balancer-controller"
 
 - name: deploy ALBC
   shell: kubectl apply -f roles/eks/app/albc.yaml
