@@ -1276,3 +1276,55 @@ kubectl logs -f aws-load-balancer-controller-749b54998c-c64ws -n kubesystem
 ```
 For production workloads much better is to add your own kusomization to the istio ingress. It will preserve ALB to be patched each time and preserve rolling updates...
 
+
+If you do not set up HTTP you can get such erro for example while creating Notebook: "Could not find CSRF cookie XSRF-TOKEN in the request"
+You should get you own domain and create certificates.
+Then you should enable HTTPS
+```
+kubectl edit -n kubeflow gateways.networking.istio.io kubeflow-gateway
+```
+
+Append HTTPS configuration.
+```
+spec:
+  selector:
+    istio: ingressgateway
+  servers:
+  - hosts:
+    - '*'
+    port:
+      name: http
+      number: 80
+      protocol: HTTP
+    tls:
+      httpsRedirect: true
+  - hosts:
+    - '*'
+    port:
+      name: https
+      number: 443
+      protocol: HTTPS
+    tls:
+      mode: SIMPLE
+      privateKey: /etc/istio/ingressgateway-certs/tls.key
+      serverCertificate: /etc/istio/ingressgateway-certs/tls.crt
+```
+
+You can attach Cert to ALB using annotation or create cert in Kubernetes using cert manager
+```
+kind: Certificate
+metadata:
+  name: istio-ingressgateway-certs
+  namespace: istio-system
+spec:
+  commonName: istio-ingressgateway.istio-system.svc
+  dnsNames:
+  - dnsname
+  isCA: true
+  issuerRef:
+    kind: ClusterIssuer
+    name: kubeflow-self-signing-issuer
+  secretName: istio-ingressgateway-certs
+
+```
+
