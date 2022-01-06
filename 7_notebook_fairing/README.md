@@ -11,6 +11,16 @@ ECR image for notebook:
 527798164940.dkr.ecr.us-west-2.amazonaws.com/tensorflow-1.15.2-notebook-cpu:1.0.0
 ```
 
+In the Notebook cell run and navigate to 7_notebook_fairing dir
+```
+!git clone https://github.com/malawskim/kubeflow-workshop.git
+```
+
+
+
+------
+Notebook dump
+
 fairing_into.ipynb
 
 {
