@@ -1,9 +1,9 @@
 # Kubeflow-workshop
 
-# Day 1 & 2
+# Day 1( & 2)
 Intruductions, Kubernetes, EKS and Kubeflow concepts
 Working with EKS using eksctl,
-Microk8s
+Microk8s(optional)
 
 # Day 3
 Preparing production framework, infrastructure and Kubeflow deployment
