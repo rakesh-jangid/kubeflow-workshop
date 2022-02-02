@@ -154,7 +154,7 @@ wget https://github.com/kubeflow/manifests/archive/v1.3-branch.tar.gz
 tar -xvf v1.3-branch.tar.gz
 ```
 
-9 create ansible/kubeflow/app/noble/install.sh
+9 create ansible/roles/kubeflow/app/noble/install.sh
 ```
 while ! kustomize build kubeflow1.3 | kubectl apply -f -; do echo "Retrying to apply resources"; sleep 10; done
 
