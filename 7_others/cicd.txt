@@ -1,1 +1,10 @@
-
+CI/CD 
+1. Create cicd namespace with irsa support
+2. Create cicd job with the tool of your choice that can:
+  a) authenticate to the cluster
+  b) upload pipeline version
+  c) create experiment
+  d) create run in the experiment with pipeline version
+  
+ https://kubeflow-pipelines.readthedocs.io/en/latest/source/kfp.client.html
+ 
