@@ -7,3 +7,5 @@ You can also use PyTorch Job by defining a PyTorchJob config file and pytorch-op
 
 Kubeflow also support MXNet, XGBoost and MPI.
 More: https://www.kubeflow.org/docs/components/training/
+Pytorch: https://pytorch.org/tutorials/beginner/dist_overview.html
+Tensorflow: https://www.tensorflow.org/guide/distributed_training
