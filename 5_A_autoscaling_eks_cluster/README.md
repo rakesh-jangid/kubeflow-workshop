@@ -19,7 +19,7 @@ nodeGroups:
       withAddonPolicies:
         autoScaler: true
     labels:
-      nodegroup-type: stateful-west1a
+      nodegroup-type: stateful-west2a
       instance-type: onDemand
     ssh:
       enableSsm: true
@@ -56,7 +56,7 @@ nodeGroups:
 
 Deploy cluster or update nodegroups if it already exist
 ```
-ekscrl create cluster -f cluster.yaml
+eksctl create cluster -f cluster.yaml
 ```
 
 update kube config
